@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import GenOnePokemon from "./GenOnePokemon";
 
 function GenerationOne(){
     const [generationOne, setGenerationOne] = useState([])
@@ -21,9 +22,7 @@ function GenerationOne(){
                     <h4>Generation 1</h4>
                 </div>
                 <div>
-                    {pokemons.pokemon_species.map((pokemon)=>{
-                        return <p key={pokemon.name}>{pokemon.name}</p>
-                    })}
+                    {pokemons.pokemon_species.map((pokemon) => <GenOnePokemon pokemon={pokemon} key={pokemon.name} />)}
                 </div>
             </>
         )
