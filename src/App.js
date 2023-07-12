@@ -2,6 +2,7 @@ import './App.css';
 import React from "react";
 import {Switch, Route} from "react-router-dom"
 import Home from './home/Home';
+import Generations from './generations/Generations';
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
         <Switch>
           <Route path="/" exact={true}>
             <Home />
+          </Route>
+          <Route path="/generations" exact={true}>
+            <Generations />
           </Route>
         </Switch>
       </div>

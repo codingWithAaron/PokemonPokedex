@@ -11,7 +11,7 @@ function Home(){
                 <div className="card-header">
                     <ul className="nav">
                         <li className="nav-item">
-                            <Link to="#">Generations</Link>
+                            <Link to="/generations">Generations</Link>
                         </li>
                     </ul>
                 </div>
