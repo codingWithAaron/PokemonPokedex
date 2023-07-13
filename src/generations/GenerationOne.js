@@ -18,11 +18,13 @@ function GenerationOne(){
     if(pokemons.pokemon_species){
         return (
             <>
-                <div>
-                    <h4>Generation 1</h4>
-                </div>
-                <div>
-                    {pokemons.pokemon_species.map((pokemon) => <GenOnePokemon pokemon={pokemon} key={pokemon.name} />)}
+                <div className="d-flex flex-column align-items-center">
+                    <div>
+                        <h4>Generation 1</h4>
+                    </div>
+                    <div className="mb-5">
+                        {pokemons.pokemon_species.map((pokemon) => <GenOnePokemon pokemon={pokemon} key={pokemon.name} />)}
+                    </div>
                 </div>
             </>
         )
