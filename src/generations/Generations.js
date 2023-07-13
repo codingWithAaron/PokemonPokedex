@@ -1,4 +1,3 @@
-import { Switch, Route } from "react-router-dom/cjs/react-router-dom.min";
 import GenerationOne from "./GenerationOne";
 
 function Generations(){
