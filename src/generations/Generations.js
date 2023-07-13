@@ -60,6 +60,97 @@ function Generations() {
     setFilterGenNine(false);
   }
 
+  function filterGenThreeOnClick() {
+    setFilterAll(false);
+    setFilterGenOne(false);
+    setFilterGenTwo(false);
+    setFilterGenThree(true);
+    setFilterGenFour(false);
+    setFilterGenFive(false);
+    setFilterGenSix(false);
+    setFilterGenSeven(false);
+    setFilterGenEight(false);
+    setFilterGenNine(false);
+  }
+
+  function filterGenFourOnClick() {
+    setFilterAll(false);
+    setFilterGenOne(false);
+    setFilterGenTwo(false);
+    setFilterGenThree(false);
+    setFilterGenFour(true);
+    setFilterGenFive(false);
+    setFilterGenSix(false);
+    setFilterGenSeven(false);
+    setFilterGenEight(false);
+    setFilterGenNine(false);
+  }
+
+  function filterGenFiveOnClick() {
+    setFilterAll(false);
+    setFilterGenOne(false);
+    setFilterGenTwo(false);
+    setFilterGenThree(false);
+    setFilterGenFour(false);
+    setFilterGenFive(true);
+    setFilterGenSix(false);
+    setFilterGenSeven(false);
+    setFilterGenEight(false);
+    setFilterGenNine(false);
+  }
+
+  function filterGenSixOnClick() {
+    setFilterAll(false);
+    setFilterGenOne(false);
+    setFilterGenTwo(false);
+    setFilterGenThree(false);
+    setFilterGenFour(false);
+    setFilterGenFive(false);
+    setFilterGenSix(true);
+    setFilterGenSeven(false);
+    setFilterGenEight(false);
+    setFilterGenNine(false);
+  }
+
+  function filterGenSevenOnClick() {
+    setFilterAll(false);
+    setFilterGenOne(false);
+    setFilterGenTwo(false);
+    setFilterGenThree(false);
+    setFilterGenFour(false);
+    setFilterGenFive(false);
+    setFilterGenSix(false);
+    setFilterGenSeven(true);
+    setFilterGenEight(false);
+    setFilterGenNine(false);
+  }
+
+  function filterGenEightOnClick() {
+    setFilterAll(false);
+    setFilterGenOne(false);
+    setFilterGenTwo(false);
+    setFilterGenThree(false);
+    setFilterGenFour(false);
+    setFilterGenFive(false);
+    setFilterGenSix(false);
+    setFilterGenSeven(false);
+    setFilterGenEight(true);
+    setFilterGenNine(false);
+  }
+
+  function filterGenNineOnClick() {
+    setFilterAll(false);
+    setFilterGenOne(false);
+    setFilterGenTwo(false);
+    setFilterGenThree(false);
+    setFilterGenFour(false);
+    setFilterGenFive(false);
+    setFilterGenSix(false);
+    setFilterGenSeven(false);
+    setFilterGenEight(false);
+    setFilterGenNine(true);
+  }
+
   return (
     <>
       <div className="d-flex justify-content-center mt-4">
@@ -77,25 +168,25 @@ function Generations() {
             <button onClick={filterGenTwoOnClick}>Gen 2</button>
           </li>
           <li className="btn">
-            <button>Gen 3</button>
+            <button onClick={filterGenThreeOnClick}>Gen 3</button>
           </li>
           <li className="btn">
-            <button>Gen 4</button>
+            <button onClick={filterGenFourOnClick}>Gen 4</button>
           </li>
           <li className="btn">
-            <button>Gen 5</button>
+            <button onClick={filterGenFiveOnClick}>Gen 5</button>
           </li>
           <li className="btn">
-            <button>Gen 6</button>
+            <button onClick={filterGenSixOnClick}>Gen 6</button>
           </li>
           <li className="btn">
-            <button>Gen 7</button>
+            <button onClick={filterGenSevenOnClick}>Gen 7</button>
           </li>
           <li className="btn">
-            <button>Gen 8</button>
+            <button onClick={filterGenEightOnClick}>Gen 8</button>
           </li>
           <li className="btn">
-            <button>Gen 9</button>
+            <button onClick={filterGenNineOnClick}>Gen 9</button>
           </li>
         </ul>
       </nav>
@@ -116,6 +207,13 @@ function Generations() {
       )}
       {filterGenOne ? <GenerationOne /> : ""}
       {filterGenTwo ? <GenerationTwo /> : ""}
+      {filterGenThree ? <GenerationThree /> : ""}
+      {filterGenFour ? <GenerationFour /> : ""}
+      {filterGenFive ? <GenerationFive /> : ""}
+      {filterGenSix ? <GenerationSix /> : ""}
+      {filterGenSeven ? <GenerationSeven /> : ""}
+      {filterGenEight ? <GenerationEight /> : ""}
+      {filterGenNine ? <GenerationNine /> : ""}
     </>
   );
 }
