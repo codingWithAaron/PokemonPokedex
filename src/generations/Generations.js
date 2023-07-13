@@ -1,6 +1,7 @@
 import GenerationOne from "./GenerationOne";
 import GenerationTwo from "./GenerationTwo";
 import GenerationThree from "./GenerationThree";
+import GenerationFour from "./GenerationFour";
 
 function Generations(){
     return (
@@ -11,6 +12,7 @@ function Generations(){
             <GenerationOne />
             <GenerationTwo />
             <GenerationThree />
+            <GenerationFour />
         </>
     )
 }
