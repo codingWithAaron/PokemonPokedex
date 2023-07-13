@@ -1,5 +1,6 @@
 import GenerationOne from "./GenerationOne";
 import GenerationTwo from "./GenerationTwo";
+import GenerationThree from "./GenerationThree";
 
 function Generations(){
     return (
@@ -9,6 +10,7 @@ function Generations(){
             </div>
             <GenerationOne />
             <GenerationTwo />
+            <GenerationThree />
         </>
     )
 }
