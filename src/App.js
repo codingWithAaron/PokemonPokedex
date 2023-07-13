@@ -1,8 +1,8 @@
 import React from "react";
-import {Switch, Route} from "react-router-dom"
-import Home from './home/Home';
-import Generations from './generations/Generations';
-import Navbar from './navbar/Navbar';
+import { Switch, Route } from "react-router-dom";
+import Home from "./home/Home";
+import Generations from "./generations/Generations";
+import Navbar from "./navbar/Navbar";
 
 function App() {
   return (
@@ -19,7 +19,6 @@ function App() {
         </Switch>
       </div>
     </>
-
   );
 }
 
