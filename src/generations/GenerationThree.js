@@ -22,7 +22,7 @@ function GenerationThree(){
                     <div>
                         <h4>Generation 3</h4>
                     </div>
-                    <div className="mb-5">
+                    <div className="d-flex flex-wrap m-5">
                         {pokemons.pokemon_species.map((pokemon) => <GenThreePokemon pokemon={pokemon} key={pokemon.name} />)}
                     </div>
                 </div>
