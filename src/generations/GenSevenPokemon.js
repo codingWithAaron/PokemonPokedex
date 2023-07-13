@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react"
 import { Link } from "react-router-dom/cjs/react-router-dom.min"
 
-function GenTwoPokemon({pokemon}){
+function GenSevenPokemon({pokemon}){
     const [sprite, setSprite] = useState();
     
     useEffect(()=>{
@@ -15,7 +15,7 @@ function GenTwoPokemon({pokemon}){
 
     return (
         <>
-            <div className="border p-2 me-2 mb-2">
+            <div className="border p-2 me-2 mb-20">
                 <Link to="#">{pokemon.name}</Link>
                 {sprite ? <img src={`${sprite.sprites.front_default}`} alt={`${pokemon.name} sprite`} /> : <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" alt="ditto" /> }
             </div>
@@ -23,4 +23,4 @@ function GenTwoPokemon({pokemon}){
     )
 }
 
-export default GenTwoPokemon
+export default GenSevenPokemon
