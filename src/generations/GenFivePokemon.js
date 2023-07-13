@@ -1,10 +1,7 @@
 import React, {useEffect, useState} from "react"
 import { Link } from "react-router-dom/cjs/react-router-dom.min"
 
-
-
-function GenOnePokemon({pokemon}){
-
+function GenFivePokemon({pokemon}){
     const [sprite, setSprite] = useState();
     
     useEffect(()=>{
@@ -31,4 +28,4 @@ function GenOnePokemon({pokemon}){
     )
 }
 
-export default GenOnePokemon
+export default GenFivePokemon
