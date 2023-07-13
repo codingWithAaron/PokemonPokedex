@@ -19,10 +19,10 @@ function GenerationOne(){
         return (
             <>
                 <div className="d-flex flex-column align-items-center">
-                    <div>
+                    <div className="mt-4">
                         <h4>Generation 1</h4>
                     </div>
-                    <div className="mb-5">
+                    <div className="d-flex flex-wrap m-5">
                         {pokemons.pokemon_species.map((pokemon) => <GenOnePokemon pokemon={pokemon} key={pokemon.name} />)}
                     </div>
                 </div>

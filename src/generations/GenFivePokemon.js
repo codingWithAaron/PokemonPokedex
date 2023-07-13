@@ -13,14 +13,9 @@ function GenFivePokemon({pokemon}){
         loadSprite()
     },[])
 
-
-    
-
-
-
     return (
         <>
-            <div>
+            <div className="border p-2 me-2">
                 <Link to="#">{pokemon.name}</Link>
                 {sprite ? <img src={`${sprite.sprites.front_default}`} alt={`${pokemon.name} sprite`} /> : <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" alt="ditto" /> }
             </div>

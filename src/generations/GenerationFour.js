@@ -22,7 +22,7 @@ function GenerationFour(){
                     <div>
                         <h4>Generation 4</h4>
                     </div>
-                    <div className="mb-5">
+                    <div className="d-flex flex-wrap m-5">
                         {pokemons.pokemon_species.map((pokemon) => <GenFourPokemon pokemon={pokemon} key={pokemon.name} />)}
                     </div>
                 </div>
