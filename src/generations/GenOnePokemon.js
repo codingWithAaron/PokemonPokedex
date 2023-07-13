@@ -17,7 +17,7 @@ function GenOnePokemon({ pokemon }) {
 
   return (
     <>
-      <div>
+      <div className="border p-2 me-2 mb-2">
         <Link to="#">{pokemon.name}</Link>
         {sprite ? (
           <img

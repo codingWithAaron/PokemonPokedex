@@ -9,68 +9,115 @@ import GenerationEight from "./GenerationEight";
 import GenerationNine from "./GenerationNine";
 import { useState } from "react";
 
-<<<<<<< HEAD
 function Generations() {
+  const [filterAll, setFilterAll] = useState(true);
+  const [filterGenOne, setFilterGenOne] = useState(false);
+  const [filterGenTwo, setFilterGenTwo] = useState(false);
+  const [filterGenThree, setFilterGenThree] = useState(false);
+  const [filterGenFour, setFilterGenFour] = useState(false);
+  const [filterGenFive, setFilterGenFive] = useState(false);
+  const [filterGenSix, setFilterGenSix] = useState(false);
+  const [filterGenSeven, setFilterGenSeven] = useState(false);
+  const [filterGenEight, setFilterGenEight] = useState(false);
+  const [filterGenNine, setFilterGenNine] = useState(false);
+
+  function filterAllOnClick() {
+    setFilterAll(!filterAll);
+    setFilterGenOne(false);
+    setFilterGenTwo(false);
+    setFilterGenThree(false);
+    setFilterGenFour(false);
+    setFilterGenFive(false);
+    setFilterGenSix(false);
+    setFilterGenSeven(false);
+    setFilterGenEight(false);
+    setFilterGenNine(false);
+  }
+
+  function filterGenOneOnClick() {
+    setFilterAll(false);
+    setFilterGenOne(true);
+    setFilterGenTwo(false);
+    setFilterGenThree(false);
+    setFilterGenFour(false);
+    setFilterGenFive(false);
+    setFilterGenSix(false);
+    setFilterGenSeven(false);
+    setFilterGenEight(false);
+    setFilterGenNine(false);
+  }
+
+  function filterGenTwoOnClick() {
+    setFilterAll(false);
+    setFilterGenOne(false);
+    setFilterGenTwo(true);
+    setFilterGenThree(false);
+    setFilterGenFour(false);
+    setFilterGenFive(false);
+    setFilterGenSix(false);
+    setFilterGenSeven(false);
+    setFilterGenEight(false);
+    setFilterGenNine(false);
+  }
+
   return (
     <>
       <div className="d-flex justify-content-center mt-4">
         <h1>Generations</h1>
       </div>
-      <GenerationOne />
-      <GenerationTwo />
-      <GenerationThree />
-      <GenerationFour />
-      <GenerationFive />
+      <nav className="d-flex justify-content-center">
+        <ul className="d-flex">
+          <li className="btn">
+            <button onClick={filterAllOnClick}>All</button>
+          </li>
+          <li className="btn">
+            <button onClick={filterGenOneOnClick}>Gen 1</button>
+          </li>
+          <li className="btn">
+            <button onClick={filterGenTwoOnClick}>Gen 2</button>
+          </li>
+          <li className="btn">
+            <button>Gen 3</button>
+          </li>
+          <li className="btn">
+            <button>Gen 4</button>
+          </li>
+          <li className="btn">
+            <button>Gen 5</button>
+          </li>
+          <li className="btn">
+            <button>Gen 6</button>
+          </li>
+          <li className="btn">
+            <button>Gen 7</button>
+          </li>
+          <li className="btn">
+            <button>Gen 8</button>
+          </li>
+          <li className="btn">
+            <button>Gen 9</button>
+          </li>
+        </ul>
+      </nav>
+      {filterAll ? (
+        <>
+          <GenerationOne />
+          <GenerationTwo />
+          <GenerationThree />
+          <GenerationFour />
+          <GenerationFive />
+          <GenerationSix />
+          <GenerationSeven />
+          <GenerationEight />
+          <GenerationNine />{" "}
+        </>
+      ) : (
+        ""
+      )}
+      {filterGenOne ? <GenerationOne /> : ""}
+      {filterGenTwo ? <GenerationTwo /> : ""}
     </>
   );
-=======
-function Generations(){
-    const [filterAll, setFilterAll] = useState(true)
-    const [filterGenOne, setFilterGenOne] = useState(false)
-
-    function filterAllOnClick(){
-        setFilterAll(!filterAll)
-    }
-
-    function filterGenOneOnClick(){
-        setFilterAll(!filterAll)
-        setFilterGenOne(!filterGenOne)
-    }
-
-
-
-    return (
-        <>
-            <div className="d-flex justify-content-center mt-4">
-                <h1>Generations</h1>
-            </div>
-            <nav className="d-flex justify-content-center">
-                <ul className="d-flex">
-                    <li className="btn"><button onClick={filterAllOnClick}>All</button></li>
-                    <li className="btn"><button onClick={filterGenOneOnClick}>Gen 1</button></li>
-                    <li className="btn"><button>Gen 2</button></li>
-                    <li className="btn"><button>Gen 3</button></li>
-                    <li className="btn"><button>Gen 4</button></li>
-                    <li className="btn"><button>Gen 5</button></li>
-                    <li className="btn"><button>Gen 6</button></li>
-                    <li className="btn"><button>Gen 7</button></li>
-                    <li className="btn"><button>Gen 8</button></li>
-                    <li className="btn"><button>Gen 9</button></li>
-                </ul>
-            </nav>
-            {filterAll ? <><GenerationOne />
-                <GenerationTwo />
-                <GenerationThree />
-                <GenerationFour />
-                <GenerationFive />
-                <GenerationSix />
-                <GenerationSeven />
-                <GenerationEight />
-                <GenerationNine /> </> : ""}
-            {filterGenOne ? <GenerationOne /> : ""}
-        </>
-    )
->>>>>>> 5cb1c32a1d89ba248fb38159c34c83540aa0876b
 }
 
 export default Generations;
