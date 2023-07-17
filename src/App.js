@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import Home from "./home/Home";
 import Generations from "./generations/Generations";
 import Navbar from "./navbar/Navbar";
+import PokemonInfo from "./pokemonInfo/PokemonInfo";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
           </Route>
           <Route path="/generations" exact={true}>
             <Generations />
+          </Route>
+          <Route path="/pokemon-info/:pokemonName" exact={true}>
+            <PokemonInfo />
           </Route>
         </Switch>
       </div>
