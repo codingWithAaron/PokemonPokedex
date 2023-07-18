@@ -1,4 +1,27 @@
 .scrollTable {
-    height: 250px;
-    overflow-y: scroll;
+  height: 250px;
+  overflow-y: scroll;
+}
+
+#pokemonImage {
+  background-color: rgb(235, 235, 235);
+}
+
+#tableColor {
+  background-color: rgb(204, 204, 204);
+}
+
+#nameTag {
+  background-color: rgb(214, 64, 64);
+}
+
+#typeNormalTag {
+    background-color: rgb(235, 235, 235);
+}
+
+#backgroundImage {
+  background-image: url("https://e1.pxfuel.com/desktop-wallpaper/269/183/desktop-wallpaper-rotom-pokedex-backgrounds-pokedex.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
