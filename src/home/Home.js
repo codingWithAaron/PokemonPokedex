@@ -1,11 +1,12 @@
 import React from "react";
 import "./Home.css";
+import PokemonOfTheDay from "./PokemonOfTheDay";
 
 function Home() {
   return (
     <>
       <div className="d-flex flex-column align-items-center justify-content-center mt-4">
-        <h1>Welcome to the World of Pokemon!</h1>
+        <h1 className="mb-5">Welcome to the World of Pokemon!</h1>
         <div
           id="carouselExampleIndicators"
           className="carousel slide"
@@ -36,7 +37,14 @@ function Home() {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
-                src="https://wallpaperaccess.com/full/8611.jpg"
+                src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2022/08/Pokemon-Every-Pokemon-Game-On-Nintendo-Switch-Ranked.jpg"
+                className="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div className="carousel-item">
+              <img
+                src="https://9to5toys.com/wp-content/uploads/sites/5/2023/06/Pokemon-151-lead.jpg"
                 className="d-block w-100"
                 alt="..."
               />
@@ -44,14 +52,7 @@ function Home() {
             <div className="carousel-item">
               <img
                 src="https://wallpaperaccess.com/full/20996.jpg"
-                class="d-block w-100"
-                alt="..."
-              />
-            </div>
-            <div className="carousel-item">
-              <img
-                src="https://wallpaper.dog/large/754223.jpg"
-                class="d-block w-100"
+                className="d-block w-100"
                 alt="..."
               />
             </div>
@@ -81,8 +82,8 @@ function Home() {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <div>
-          <h1>Pokemon of the Day</h1>
+        <div className="w-100">
+          <PokemonOfTheDay />
         </div>
       </div>
     </>
