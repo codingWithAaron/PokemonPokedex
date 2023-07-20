@@ -6,6 +6,11 @@
   align-items: center;
 }
 
+#pokemonFont{
+  font-family: "Pokemon Solid", sans-serif;
+  color: #ffcb05
+}
+
 .menu-bars {
   margin-left: 2rem;
   font-size: 2rem;
@@ -22,6 +27,7 @@
   top: 0;
   left: -100%;
   transition: 850ms;
+  z-index: 6;
 }
 
 .nav-menu.active {

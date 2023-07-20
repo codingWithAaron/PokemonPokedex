@@ -8,6 +8,7 @@ import GenerationSeven from "./GenerationSeven";
 import GenerationEight from "./GenerationEight";
 import GenerationNine from "./GenerationNine";
 import { useState } from "react";
+import "./Generations.css"
 
 function Generations() {
   const [filterAll, setFilterAll] = useState(true);
@@ -157,7 +158,7 @@ function Generations() {
         <h1>Generations</h1>
       </div>
       <nav className="d-flex justify-content-center">
-        <ul className="d-flex">
+        <ul className="d-flex" id="navbar">
           <li className="btn">
             <button onClick={filterAllOnClick}>All</button>
           </li>
