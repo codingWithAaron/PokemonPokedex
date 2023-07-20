@@ -1,0 +1,7 @@
+
+@media all and (max-width: 1020px){
+    #navbar {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

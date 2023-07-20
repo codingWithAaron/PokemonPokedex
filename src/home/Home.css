@@ -2,3 +2,11 @@
     height: 400px;
     width: 1020px;
 }
+
+@media all and (max-width: 1020px){
+    .carousel-inner {
+        height: 250px;
+        width: 450px;
+        z-index: 0;
+    }
+}

@@ -6,7 +6,7 @@ function Home() {
   return (
     <>
       <div className="d-flex flex-column align-items-center justify-content-center mt-4">
-        <h1 className="mb-5">Welcome to the World of Pokemon!</h1>
+        <h1 className="mb-5 text-center">Welcome to the World of Pokemon!</h1>
         <div
           id="carouselExampleIndicators"
           className="carousel slide"
