@@ -14,10 +14,17 @@ function Navbar() {
   return (
     <>
       <IconContext.Provider value={{ color: "fff" }}>
-        <div className="navbar">
-          <Link to="#" className="menu-bars">
-            <FaIcons.FaBars onClick={showSidebar} />
-          </Link>
+        <div>
+          <div className="navbar">
+            <div>
+              <Link to="#" className="menu-bars">
+                <FaIcons.FaBars onClick={showSidebar} />
+              </Link>
+            </div>
+            <div className="ms-3" id="pokemonFont">
+              <h1>The PokéDen</h1>
+            </div>
+          </div>
         </div>
         <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
           <ul className="nav-menu-items" onClick={showSidebar}>
