@@ -1,12 +1,78 @@
-#pokemonOfDay{
-    height: 100px;
-    width: 1000px
+#pokemonOfDay {
+  height: 100px;
+  width: 1000px;
 }
 
-@media all and (max-width: 1020px){
-    #pokemonOfDay{
-        height: 100px;
-        width: 500px;
-        margin-top: -25px;
-    }
+#content-area{
+    display: flex
+}
+
+#pokemonImage {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: rgb(235, 235, 235);
+    flex-direction: column;
+}
+
+@media all and (max-width: 1020px) {
+  #pokemonOfDay {
+    height: 100px;
+    width: 500px;
+    margin-top: -25px;
+  }
+
+  #pokemonImage {
+    background-color: rgb(235, 235, 235);
+    flex-direction: column;
+  }
+
+  #content-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .scrollTable {
+    height: 250px;
+    overflow-y: scroll;
+  }
+
+  #pokemonImage {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(235, 235, 235);
+    flex-direction: column;
+}
+
+  #tableColor {
+    background-color: rgb(204, 204, 204);
+  }
+
+  #nameTag {
+    background-color: rgb(214, 64, 64);
+  }
+
+  #typeNormalTag {
+    background-color: rgb(235, 235, 235);
+  }
+
+  #backgroundImage {
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/269/183/desktop-wallpaper-rotom-pokedex-backgrounds-pokedex.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex: auto;
+  }
+
+  #table-div{
+    margin-bottom: -60px;
+  }
 }

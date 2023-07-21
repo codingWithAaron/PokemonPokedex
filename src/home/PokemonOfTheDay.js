@@ -48,12 +48,12 @@ function PokemonOfTheDay() {
             <div className="p-5">
               <h2 className="text-center mb-3">Pokemon of the Day</h2>
               <div
-                className="rounded-4 border border-3 border-dark d-flex flex-column p-5"
+                className="rounded-4 border border-3 border-dark p-5"
                 id="backgroundImage"
               >
-                <div className="d-flex flex-row justify-content-evenly mb-4">
+                <div className="justify-content-evenly mb-4" id="content-area">
                   <div
-                    className="rounded-4 d-flex align-items-center w-25 justify-content-center mt-5 mb-5"
+                    className="rounded-4"
                     id="pokemonImage"
                   >
                     <img
@@ -62,7 +62,7 @@ function PokemonOfTheDay() {
                       alt={`${pokemon.name} sprite`}
                     />
                   </div>
-                  <div>
+                  <div id="table-div">
                     <h2
                       className="border border-danger rounded-4 p-1 d-flex justify-content-center"
                       id="nameTag"
