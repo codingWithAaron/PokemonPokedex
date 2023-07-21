@@ -132,7 +132,15 @@ function PokemonInfo() {
       </>
     );
   } else {
-    return <p>Loading...</p>;
+    return (
+      <>
+        <div className="d-flex flex-column align-items-center mt-5">
+          <h1>404: Not Found</h1>
+          <p>The information for this Pokemon is missing!</p>
+
+        </div>
+      </>
+    )
   }
 }
 
