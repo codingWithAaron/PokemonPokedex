@@ -24,13 +24,24 @@ function ListBerries({ berry }) {
     loadBerryInfo();
   }, []);
 
+  if (!loaded) {
+    return <p>Loading...</p>;
+  }
+
   return (
-    <div>
+    <div className="border p-2 me-2 mb-2">
       <h5>{berry.name} </h5>
       <img src={item.sprites.default} alt={item.name} />
       <p>Size: {berryInfo.size}</p>
       <p>Smoothness: {berryInfo.smoothness}</p>
       <p>Firmness: {berryInfo.firmness.name}</p>
+      <p>Flavors: </p>
+
+      <ul>
+        {berryInfo.flavors.map((flavor) => (
+          <li key={flavor.flavor.name}>{flavor.flavor.name}</li>
+        ))}
+      </ul>
     </div>
   );
 }

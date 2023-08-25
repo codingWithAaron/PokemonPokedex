@@ -41,12 +41,15 @@ function Berries() {
 
   return (
     <div>
-      <h1>Berries</h1>
-
-      <div>
-        {berries.map((berry) => (
-          <ListBerries berry={berry} key={berry.name} />
-        ))}
+      <div className="d-flex flex-column align-items-center">
+        <div>
+          <h1>Berries</h1>
+        </div>
+        <div className="d-flex flex-wrap m-5">
+          {berries.map((berry) => (
+            <ListBerries berry={berry} key={berry.name} />
+          ))}
+        </div>
       </div>
     </div>
   );
