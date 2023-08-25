@@ -4,6 +4,7 @@ import Home from "./home/Home";
 import Generations from "./generations/Generations";
 import Navbar from "./navbar/Navbar";
 import PokemonInfo from "./pokemonInfo/PokemonInfo";
+import Berries from "./berries/Berries";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           </Route>
           <Route path="/generations" exact={true}>
             <Generations />
+          </Route>
+          <Route path="/berries" exact={true}>
+            <Berries />
           </Route>
           <Route path="/pokemon-info/:pokemonName" exact={true}>
             <PokemonInfo />

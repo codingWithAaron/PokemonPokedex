@@ -15,4 +15,10 @@ export const SidebarData = [
     icon: <MdIcons.MdOutlineCatchingPokemon />,
     className: "nav-text",
   },
+  {
+    title: "Berries",
+    path: "/berries",
+    icon: <MdIcons.MdOutlineLocalFlorist />,
+    className: "nav-text",
+  },
 ];
