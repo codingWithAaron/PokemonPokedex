@@ -13,9 +13,11 @@ function Berries() {
       try {
         const response = await fetch(url);
         const data = await response.json();
+        // the berry API is a linked list of 15-20 results so we need to
+        // recursively call the API until we reach the end
         const berries = data.results;
         setBerries((prev) => [...prev, ...berries]);
-
+        // moving through the linked list
         if (data.next) {
           await loadBerries(data.next);
         } else {
@@ -27,13 +29,6 @@ function Berries() {
     }
     loadBerries(baseUrl);
   }, []);
-
-  // <div>
-  //   <h1>Berries</h1>
-  //   {berries.map((berry) => (
-  //     <ListBerries berry={berry} key={berry.name} />
-  //   ))}
-  // </div>
 
   if (!loaded) {
     return <p>Loading...</p>;

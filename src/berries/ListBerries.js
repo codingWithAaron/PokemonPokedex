@@ -11,7 +11,12 @@ function ListBerries({ berry }) {
       setLoaded(false);
       try {
         const response = await fetch(berry.url);
+        // this loads the berry info but since berries are technically
+        // items, a seperate call is needed to access the item sprite
         const data = await response.json();
+        // this calls the item from the API in order to display the sprite,
+        // there is distinct sprite address so we do have access to the entire item
+        // for potential further use, contest, location, generation, etc
         const itemResponse = await fetch(data.item.url);
         const itemData = await itemResponse.json();
         setBerryInfo(data);
